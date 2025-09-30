@@ -5,21 +5,21 @@
 class Daypub < Formula
   desc "A tool for publishing day entries as markdown or Hugo content"
   homepage "https://github.com/samf/homebrew-samf"
-  version "0.2.5"
+  version "0.2.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/samf/daypub/releases/download/v0.2.5/daypub_Darwin_x86_64.tar.gz"
-      sha256 "7c495c2cec57860e809d1738242b484c547c2404df427854c5b16da0c06baebb"
+      url "https://github.com/samf/daypub/releases/download/v0.2.6/daypub_Darwin_x86_64.tar.gz"
+      sha256 "6adf5bd431c2fce9ff4021b9ada42c991c59d54fd7303cb8c16d84abb943b764"
 
       def install
         bin.install "daypub"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/samf/daypub/releases/download/v0.2.5/daypub_Darwin_arm64.tar.gz"
-      sha256 "ca74c131093c978b09f13918407151d0fa5b2bdda3b54a5c444c488ae42e7f8d"
+      url "https://github.com/samf/daypub/releases/download/v0.2.6/daypub_Darwin_arm64.tar.gz"
+      sha256 "13be340631bcb30065ff215581e40000ed1af30b5992f8b621387a2fa2354a67"
 
       def install
         bin.install "daypub"
@@ -29,15 +29,15 @@ class Daypub < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/samf/daypub/releases/download/v0.2.5/daypub_Linux_x86_64.tar.gz"
-      sha256 "56e351aa7485301a1148513074890a4dd4771d0ca9671250d512686bbd23ba1f"
+      url "https://github.com/samf/daypub/releases/download/v0.2.6/daypub_Linux_x86_64.tar.gz"
+      sha256 "37f585ceb44bb7a824940af01406ca048baea7daa4f9289a3d74df23aa06be6f"
       def install
         bin.install "daypub"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/samf/daypub/releases/download/v0.2.5/daypub_Linux_arm64.tar.gz"
-      sha256 "71cd6d8bfeb0de3beccdfbace600ec29581aeaca3cbbc21aa22031772ef0779e"
+      url "https://github.com/samf/daypub/releases/download/v0.2.6/daypub_Linux_arm64.tar.gz"
+      sha256 "0efa82efd59040cb23346f958e4dff3ad026efd88533ee2ddf80d02e3142c515"
       def install
         bin.install "daypub"
       end

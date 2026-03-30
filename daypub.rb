@@ -5,21 +5,21 @@
 class Daypub < Formula
   desc "A tool for publishing day entries as markdown or Hugo content"
   homepage "https://github.com/samf/homebrew-samf"
-  version "0.3.1"
+  version "0.3.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/samf/daypub/releases/download/v0.3.1/daypub_Darwin_x86_64.tar.gz"
-      sha256 "726e549fc0b8902e85525737c3db43314248f650b91b6b646ed933c11dddd450"
+      url "https://github.com/samf/daypub/releases/download/v0.3.2/daypub_Darwin_x86_64.tar.gz"
+      sha256 "d1868690b72379b0482977ca668f24caa6607080468ad9a88b26b743f09da18f"
 
       define_method(:install) do
         bin.install "daypub"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/samf/daypub/releases/download/v0.3.1/daypub_Darwin_arm64.tar.gz"
-      sha256 "8e04fee92734fcfb7f366243b8eb1190eeeee7b85e985b3ff31fd172bf47e43c"
+      url "https://github.com/samf/daypub/releases/download/v0.3.2/daypub_Darwin_arm64.tar.gz"
+      sha256 "c2021b8cc8e2c1469d0d6d4c0dd37f59de8fd20841a4bd03d7b493eab89a42fb"
 
       define_method(:install) do
         bin.install "daypub"
@@ -29,15 +29,15 @@ class Daypub < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/samf/daypub/releases/download/v0.3.1/daypub_Linux_x86_64.tar.gz"
-      sha256 "101a37a49e1a45795b64057eedb7eee36bee7fe4a3a4525e490a0c05d82131c6"
+      url "https://github.com/samf/daypub/releases/download/v0.3.2/daypub_Linux_x86_64.tar.gz"
+      sha256 "f27a6f76cc73ba4a0c5ff9c25db8f945f0433368e0d7dea33e9c67eff635a00d"
       define_method(:install) do
         bin.install "daypub"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/samf/daypub/releases/download/v0.3.1/daypub_Linux_arm64.tar.gz"
-      sha256 "a38bee9cd0660d1f2857d6f06f9f4bb3b2382fb1191cdad933cf89038dfa3d31"
+      url "https://github.com/samf/daypub/releases/download/v0.3.2/daypub_Linux_arm64.tar.gz"
+      sha256 "3fbb278cc2f752e14149dbad68e86ebfbc6a6570212b918fdf7980887910713b"
       define_method(:install) do
         bin.install "daypub"
       end

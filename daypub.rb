@@ -5,23 +5,23 @@
 class Daypub < Formula
   desc "A tool for publishing day entries as markdown or Hugo content"
   homepage "https://github.com/samf/homebrew-samf"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/samf/daypub/releases/download/v0.3.0/daypub_Darwin_x86_64.tar.gz"
-      sha256 "5a44bf9cc7e0a07d20f1ac3e535d5dd900fd9c350228102aa72a1329a91864ad"
+      url "https://github.com/samf/daypub/releases/download/v0.3.1/daypub_Darwin_x86_64.tar.gz"
+      sha256 "726e549fc0b8902e85525737c3db43314248f650b91b6b646ed933c11dddd450"
 
-      def install
+      define_method(:install) do
         bin.install "daypub"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/samf/daypub/releases/download/v0.3.0/daypub_Darwin_arm64.tar.gz"
-      sha256 "86f2ec71c794705c1bd02bfa3977ec8a12ddfb673931c4de96b0d269fedb9177"
+      url "https://github.com/samf/daypub/releases/download/v0.3.1/daypub_Darwin_arm64.tar.gz"
+      sha256 "8e04fee92734fcfb7f366243b8eb1190eeeee7b85e985b3ff31fd172bf47e43c"
 
-      def install
+      define_method(:install) do
         bin.install "daypub"
       end
     end
@@ -29,16 +29,16 @@ class Daypub < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/samf/daypub/releases/download/v0.3.0/daypub_Linux_x86_64.tar.gz"
-      sha256 "7fe4112f00e0b6670cd3537bbc1d28d8b4b4672e1208648fff91fda59befbbe3"
-      def install
+      url "https://github.com/samf/daypub/releases/download/v0.3.1/daypub_Linux_x86_64.tar.gz"
+      sha256 "101a37a49e1a45795b64057eedb7eee36bee7fe4a3a4525e490a0c05d82131c6"
+      define_method(:install) do
         bin.install "daypub"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/samf/daypub/releases/download/v0.3.0/daypub_Linux_arm64.tar.gz"
-      sha256 "2900884671071ac40c96cf6777f320087a2cccfc21b83255f33dec375b9e1d41"
-      def install
+      url "https://github.com/samf/daypub/releases/download/v0.3.1/daypub_Linux_arm64.tar.gz"
+      sha256 "a38bee9cd0660d1f2857d6f06f9f4bb3b2382fb1191cdad933cf89038dfa3d31"
+      define_method(:install) do
         bin.install "daypub"
       end
     end

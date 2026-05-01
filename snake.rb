@@ -5,20 +5,20 @@
 class Snake < Formula
   desc "CLI for The Snake Can temporary file storage"
   homepage "https://github.com/samf/snake"
-  version "0.3.0"
+  version "0.3.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/samf/snake/releases/download/v0.3.0/snake_darwin_amd64.tar.gz"
-      sha256 "7c5c0c0c622051232bbc26c0c4e010c9d59c1304ef007e343f57e259ab892502"
+      url "https://github.com/samf/snake/releases/download/v0.3.1/snake_darwin_amd64.tar.gz"
+      sha256 "2622fd4473b57ef3140a0f3ada8c79b78ae87244f0bd958818eac4433e0e5a63"
 
       define_method(:install) do
         bin.install "snake"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/samf/snake/releases/download/v0.3.0/snake_darwin_arm64.tar.gz"
-      sha256 "fd47c9265ab5b55a57eff013888cbe903bbea574fba2996f2749fc342d6648a2"
+      url "https://github.com/samf/snake/releases/download/v0.3.1/snake_darwin_arm64.tar.gz"
+      sha256 "40335a47cf2abf38e34e06448de6a0c53547758f18a87ac8452dcf4a5bc2a414"
 
       define_method(:install) do
         bin.install "snake"
@@ -28,15 +28,15 @@ class Snake < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/samf/snake/releases/download/v0.3.0/snake_linux_amd64.tar.gz"
-      sha256 "0f5b8ba132d1223ba950d386f04a3fef6536af6def8e71dcf0f6667423dd5560"
+      url "https://github.com/samf/snake/releases/download/v0.3.1/snake_linux_amd64.tar.gz"
+      sha256 "d93726ab7d3601dbcf14d88b3f1a2cb68c4279c1e14e22110214ba5a40e5bcc5"
       define_method(:install) do
         bin.install "snake"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/samf/snake/releases/download/v0.3.0/snake_linux_arm64.tar.gz"
-      sha256 "df28935000d5ae5d7f20400eb217c0ce1cc568584b741a1e725ef74b7df43a84"
+      url "https://github.com/samf/snake/releases/download/v0.3.1/snake_linux_arm64.tar.gz"
+      sha256 "82355c2c289205060c7abac011df8ef655cd0fbc34cf552ba04c4a3e09aaf364"
       define_method(:install) do
         bin.install "snake"
       end

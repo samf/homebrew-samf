@@ -1,22 +1,22 @@
 class Fitsi < Formula
   desc "fitsi command-line tool"
   homepage "https://github.com/samf/fitsi"
-  version "0.5.0"
+  version "0.6.0"
   license "Apache-2.0"
 
   on_macos do
-    url "https://github.com/samf/fitsi/releases/download/v0.5.0/fitsi-v0.5.0-darwin-universal.tar.gz"
-    sha256 "6476c3d5c374e020c7c61aa035502a3e1da0a5253bd38cd26f5597562d19e8a8"
+    url "https://github.com/samf/fitsi/releases/download/v0.6.0/fitsi-v0.6.0-darwin-universal.tar.gz"
+    sha256 "36646cd7c76eb66d9f484a41332dee20ce38076e1564bd926f7c5c0cc573f2ba"
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/samf/fitsi/releases/download/v0.5.0/fitsi-v0.5.0-linux-x86_64.tar.gz"
-      sha256 "7e24ce6bae3ed613b4e2fbb3dd0d8555438216a6ba6697429592c7e1925e9c07"
+      url "https://github.com/samf/fitsi/releases/download/v0.6.0/fitsi-v0.6.0-linux-x86_64.tar.gz"
+      sha256 "303e328423003e5ab4afe51ef61cfe42da2057b2ca04da5b175e94e4a4efcddd"
     end
     on_arm do
-      url "https://github.com/samf/fitsi/releases/download/v0.5.0/fitsi-v0.5.0-linux-aarch64.tar.gz"
-      sha256 "7482848243586a98db0a0eab57b032aeb78149e6478b3f3aa8bfe7840290f886"
+      url "https://github.com/samf/fitsi/releases/download/v0.6.0/fitsi-v0.6.0-linux-aarch64.tar.gz"
+      sha256 "0413f09fcc26694acc8a5cd2e5e9e09e4c75e6deaacb787332a2f35c46132e85"
     end
   end
 

@@ -5,28 +5,28 @@
 class AstrobinCsv < Formula
   desc "Generate an AstroBin acquisition CSV from NINA FITS/XISF light frames"
   homepage "https://github.com/samf/astrobin-csv"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/samf/astrobin-csv/releases/download/v0.3.0/astrobin-csv_0.3.0_darwin_amd64.tar.gz"
-      sha256 "22b8afddd5ce383d99f990ef34c24e390d644fc80c24b7019cad4e30b5d57aef"
+      url "https://github.com/samf/astrobin-csv/releases/download/v0.4.0/astrobin-csv_0.4.0_darwin_amd64.tar.gz"
+      sha256 "d0a781a329e3072e4baa3ea9ad77edb7533f59846caad442aa88ff2c189abab2"
     end
     on_arm do
-      url "https://github.com/samf/astrobin-csv/releases/download/v0.3.0/astrobin-csv_0.3.0_darwin_arm64.tar.gz"
-      sha256 "60eca4483fa979650787c5ba87ada875ad5f3771a964f356f1dc74c4dc2b8ffa"
+      url "https://github.com/samf/astrobin-csv/releases/download/v0.4.0/astrobin-csv_0.4.0_darwin_arm64.tar.gz"
+      sha256 "9452d79ef54084361e0e178e6fc51a845bed466871dfb969f8506d2dd4998646"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/samf/astrobin-csv/releases/download/v0.3.0/astrobin-csv_0.3.0_linux_amd64.tar.gz"
-      sha256 "4d7ca969ee58a1f6bfd036ed0bc036cd68c536e8e0e2203f3d787295ca2a0393"
+      url "https://github.com/samf/astrobin-csv/releases/download/v0.4.0/astrobin-csv_0.4.0_linux_amd64.tar.gz"
+      sha256 "bfbf911a6ffadebd9d6b0d8542e3e8e1eb7fd6ad6c2c27a7b54cd49127cac983"
     end
     on_arm do
-      url "https://github.com/samf/astrobin-csv/releases/download/v0.3.0/astrobin-csv_0.3.0_linux_arm64.tar.gz"
-      sha256 "0ee575ef3a6ad15ca26a1c16337049242fcf6ad0ebe119bd4ec947d488ae6b82"
+      url "https://github.com/samf/astrobin-csv/releases/download/v0.4.0/astrobin-csv_0.4.0_linux_arm64.tar.gz"
+      sha256 "43045888b465ff70e577fb99081e7a3de26a9f2a5a5badce49f68c9e7e4e751d"
     end
   end
 
